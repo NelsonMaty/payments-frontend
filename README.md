@@ -83,14 +83,4 @@ This will run the app in development mode:
 - `tailwind.config.js`: Tailwind CSS configuration
 - `postcss.config.js`: PostCSS configuration for Tailwind
 
-## Tailwind CSS
 
-Tailwind CSS is pre-configured in this project. You can start using Tailwind classes in your components right away. If you need to customize the Tailwind configuration, you can do so in the `tailwind.config.js` file.
-
-## Contributing
-
-Contributions to this project are welcome. Please ensure you update tests as appropriate.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
