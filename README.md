@@ -12,29 +12,51 @@ This project is a TypeScript React application that serves as a frontend for a p
 
 ## Prerequisites
 
+# React Payments Frontend
+
+This project is a TypeScript React application that serves as a frontend for a payments system. It displays a list of payments in a table format, with features including pagination and date range filtering.
+
+## Features
+
+- Display payments in a table
+- Pagination
+- Date range filtering
+- Built with React and TypeScript
+- Styled with Tailwind CSS (pre-configured)
+
+## Prerequisites
+
 Before you begin, ensure you have met the following requirements:
 
 - Node.js (v14.0.0 or later)
 - npm (v6.0.0 or later)
+- The `payments-api` project running locally (see Backend API section below)
 
 ## Setup
 
 To set up the project locally, follow these steps:
 
 1. Clone the repository:
+
    ```
    git clone <repository-url>
    cd react-payments-frontend
    ```
 
 2. Install the dependencies:
+
    ```
    npm install
    ```
 
-3. Configure the backend URL:
-   - Open `src/App.tsx`
-   - Modify the `fetchPayments` function to point to your backend API URL.
+## Backend API
+
+This frontend application is designed to work with the `payments-api` project. Before running this frontend, ensure that:
+
+1. You have cloned and set up the `payments-api` project.
+2. The `payments-api` server is running on `http://localhost:3001`.
+
+If the API is running on a different URL, you may need to update the `fetchPayments` function in `src/App.tsx` to point to the correct URL.
 
 ## Running the Application
 
@@ -44,22 +66,16 @@ To start the development server:
 npm start
 ```
 
-This will run the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This will run the app in development mode:
 
-## Building for Production
-
-To create a production build:
-
-```
-npm run build
-```
-
-This will create a `build` folder with the production-ready files.
+- Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- The page will automatically reload if you make changes to the code.
+- You will see any lint errors in the console.
 
 ## Project Structure
 
 - `src/App.tsx`: Main application component
-- `src/components/`: 
+- `src/components/`:
   - `PaymentsTable.tsx`: Component for rendering the payments table
   - `Pagination.tsx`: Component for pagination controls
   - `DateRangePicker.tsx`: Component for date range selection
@@ -77,4 +93,4 @@ Contributions to this project are welcome. Please ensure you update tests as app
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/) payments-frontend
+[MIT](https://choosealicense.com/licenses/mit/)
